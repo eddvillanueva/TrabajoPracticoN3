@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         Toast.makeText(this, "Datos Incorrectos", Toast.LENGTH_SHORT).show();
 
-         edtNombre.setText(" ");  // PARA VACIAR
+         edtNombre.setText("");  // PARA VACIAR
          edtPassword.setText("");
     }
 

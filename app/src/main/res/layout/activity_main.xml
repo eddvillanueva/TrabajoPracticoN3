@@ -32,7 +32,7 @@
         android:layout_alignStart="@+id/textView"
         android:layout_centerVertical="true"
         android:ems="10"
-        android:hint="Ingrse su Usuario"
+        android:hint="Ingrese su Usuario"
         android:inputType="textPersonName"
         android:textColor="@android:color/background_light" />
 
