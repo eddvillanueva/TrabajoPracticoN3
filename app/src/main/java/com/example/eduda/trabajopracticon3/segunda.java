@@ -25,9 +25,9 @@ public class segunda extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segunda);
 
-    // Bundle paramet extras = getIntent().getExtras();
-    //String user = paramet.getString("PASA_NOMBRE");
-   // String passw = paramet.getString("PASA_PASSW");
+        Bundle paramet  = getIntent().getExtras();
+        String user = paramet.getString("PASA_NOMBRE");
+        String passw = paramet.getString("PASA_PASSW");
 
         btnMarcar = (Button) findViewById(R.id.btnMarcar);
         edtTelefono = (EditText) findViewById(R.id.edtTelefono);
@@ -49,6 +49,8 @@ public class segunda extends AppCompatActivity {
             // for ActivityCompat#requestPermissions for more details.
             return;
         }
+        startActivity(intent);
+
     }
     public void eventoFinalizar(View v){
         finish();
