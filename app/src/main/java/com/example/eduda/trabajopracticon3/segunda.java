@@ -32,7 +32,7 @@ public class segunda extends AppCompatActivity {
         btnMarcar = (Button) findViewById(R.id.btnMarcar);
         edtTelefono = (EditText) findViewById(R.id.edtTelefono);
         txtSaludo = (TextView) findViewById(R.id.txtSaludo);
-      //  txtSaludo.setText ("Bienvenido" + user);
+        txtSaludo.setText ("Bienvenido " + user);
     }
 
 
