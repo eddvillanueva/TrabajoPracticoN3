@@ -37,16 +37,12 @@ public class segunda extends AppCompatActivity {
 
 
     public void marcarLlamada(View v) {
-        String numero = edtTelefono.getText().toString();
+        String numero = edtTelefono.getText().toString();           // ACTION_CALL y uri, ver en espicifaciones de Android
         Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + numero));
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
+
+            // el if es para saber si esta la aplicacion disponble en el celular
+
             return;
         }
         startActivity(intent);
